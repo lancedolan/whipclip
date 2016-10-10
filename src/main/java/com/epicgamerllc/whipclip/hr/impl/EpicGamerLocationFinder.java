@@ -40,7 +40,7 @@ public class EpicGamerLocationFinder implements LocationFinder {
 
     private int shortestLength = Integer.MAX_VALUE;
     private int longestLength;
-    private final Map<String, Location> locations = new HashMap<String, Location>();
+    private final Map<String, Location> locations = new HashMap<>();
     
     public EpicGamerLocationFinder(){}
 
@@ -62,6 +62,10 @@ public class EpicGamerLocationFinder implements LocationFinder {
         
         //Unlike my implementation of findLocation() where performance is a concern,
         //I'm not putting focus on readability/maintainability over performance.
+        
+        //1) Parse regex String into "regexParts," which is an ordered list
+            //of objects describing how to constructs a flat Map of String possibilities
+        //2) Process the "regexParts," creating said map.
         
         List<StringBuilder> possibleStrings = new ArrayList<>();
         possibleStrings.add(new StringBuilder());
