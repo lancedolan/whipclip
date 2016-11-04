@@ -50,7 +50,7 @@ public class EpicGamerLocationFinder implements LocationFinder {
             //Here we have two design decicions:
                 //1) It is not considered a failure to receive a null location,
                     //and so we merely skip doing anything.
-                //2) It IS not considered a failure to receive a null location,
+                //2) It IS considered a failure to receive a null location,
                     //and we cannot fail silently,
                     //we should fail loudly as possible to be detected early as possible
                     //in testing
@@ -61,7 +61,7 @@ public class EpicGamerLocationFinder implements LocationFinder {
         }
         
         //Unlike my implementation of findLocation() where performance is a concern,
-        //I'm not putting focus on readability/maintainability over performance.
+        //I'm now putting focus on readability/maintainability over performance.
         
         //1) Parse regex String into "regexParts," which is an ordered list
             //of objects describing how to constructs a flat Map of String possibilities
