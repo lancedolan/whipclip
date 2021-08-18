@@ -1,6 +1,8 @@
+(update: This is the result of an at-home code challange while applying to WhipClip in 2016. It is no longer representative of my skills or style.)
+
 # whipclip demo app
 
-Download and build this project in order to see my JUNIT tests execute the exact BASIC EXAMPLE and CONFLICT EXAMPLE provided in JavaAssignment word doc.
+WhipClip engineers should download and build this project in order to see my JUNIT tests execute the exact BASIC EXAMPLE and CONFLICT EXAMPLE provided in JavaAssignment word doc.
 
 **Notes to code judge**
 
